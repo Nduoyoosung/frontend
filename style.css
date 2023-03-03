@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 23em;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7px 7px 9px 0 rgb(147, 147, 147);
+}
+/**the second class name for the two divs**/
+.col{
+    float: left;
+    width: 50%;
+}
+/*end*/
+
+/**here is the first div showing the result**/
+.result{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 23em;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.result h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+/**the result inside the circle**/
+.result .avg{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+/**the text inside the result circle**/
+.result p{
+    font-size: 18px;
+}
+
+/**and here we have the text that is below the result circle**/
+.result .text{
+    margin-top: 30px;
+}
+/**the text header**/
+.result .text h3{
+    color: hsl(0, 0%, 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/**and the paragraph after it**/
+.result .text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+/**now here is the second page after the first page**/
+.container .sum{
+    height: 23em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+}
+/**here is the header called "summary"**/
+.sum h4{
+    color: hsl(222, 85%, 18%);
+}
+/**while these are the headings inside each box**/
+.sum h5{
+    margin-left: 5px;
+}
+/**the numbers inside the box**/
+.sum p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+}
+/**number blured**/
+.sum .num{
+    opacity: 0.4;
+}
+
+/**box one style guide**/
+.sum .one{
+    background-color: rgba(255, 87, 87, 0.418);
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.2em;
+    margin-top: 30px;
+}
+.sum .one h5{
+    float: left;
+    color: hsl(0, 100%, 67%);
+}
+/**icons inside the box**/
+.sum .row svg{
+    float: left;
+}
+
+/**box two style guide**/
+.sum .two{
+    background-color: hsla(39, 100%, 56%, 0.418);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.2em;
+}
+.sum .two h5{
+    float: left;
+    color: hsl(39, 100%, 56%);
+}
+
+/**box three style guide**/
+.sum .three{
+    background-color: hsla(166, 100%, 37%, 0.418);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.2em;
+}
+.sum .three h5{
+    float: left;
+    color: hsl(166, 100%, 37%)
+}
+
+/**box four style guide**/
+.sum .four{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.2em;
+    background-color: hsla(234, 85%, 45%, 0.418);
+}
+.sum .four h5{
+    float: left;
+    color: hsl(234, 85%, 45%);
+}
+
+/**the continue button style guide**/
+.sum button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border: none;
+}
+.sum button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/**media style for mobile view**/
+@media screen and (max-width:375px) {
+    .container{
+        margin: 0;
+        height: 0;
+        width: 100%;
+    }
+    /**media style for page one called RESULT**/
+    .container .result{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    /**media style for result circle**/
+    .result .avg{
+        width: 40%;
+    }
+    /**media style for page two called SUM**/
+    .container .sum{
+        width: 100%;
+    }
+}
